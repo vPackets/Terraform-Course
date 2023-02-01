@@ -14,9 +14,13 @@ provider "aws" {
 }
 
 
-resource "aws_instance" "foo" {
+resource "aws_instance" "vPackets_ec2" {
   ami           = "ami-00874d747dde814fa" # us-west-2
   instance_type = "t2.micro"
+
+  tags = {
+    name = "vPackets - EC2"
+  }
 }
 
 

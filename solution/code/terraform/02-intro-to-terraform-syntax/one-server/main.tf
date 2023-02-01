@@ -22,3 +22,6 @@ resource "aws_instance" "example" {
   }
 }
 
+resourceresource "aws_instance" "name" {
+  
+}  
