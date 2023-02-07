@@ -11,6 +11,7 @@ terraform {
 
 provider "aws" {
   region = "us-east-2"
+  profile = "vPackets"
 }
 
 resource "aws_launch_configuration" "example" {
